@@ -1,43 +1,36 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
+import 'package:examenbotonesrutas/Inicio.dart';
+import 'package:examenbotonesrutas/pagina_timer.dart';
+import 'package:examenbotonesrutas/pagina_positioned.dart';
+import 'package:examenbotonesrutas/pagina_show_search.dart';
+import 'package:examenbotonesrutas/pagina_toggle_button.dart';
+import 'package:examenbotonesrutas/pagina_fractionally_sizedbox.dart';
+import 'package:examenbotonesrutas/pagina_platform_detect.dart';
+import 'package:examenbotonesrutas/pagina_stream_builder.dart';
+import 'package:examenbotonesrutas/pagina_snack_bar.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MiFlutterApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
+class MiFlutterApp extends StatelessWidget {
+  const MiFlutterApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: "entre paginas routes",
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const Inicio(),
+        "/Timer": (context) => const MyTimer(),
+        "/Positioned": (context) => const MyPositioned(),
+        "/MyShowSearch": (context) => const MyShowSearch(),
+        "/MyToggleButton": (context) => const MyToggleButton(),
+        "/MyFractionallySizedBox": (context) => const MyFractionallySizedBox(),
+        "/MyPlatformDetect": (context) => const MyPlatformDetect(),
+        "/MyStreamBuilder": (context) => const MyStreamBuilder(),
+        "/MySnackBar": (context) => const MySnackBar(),
+      },
     );
   }
 }
