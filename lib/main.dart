@@ -1,13 +1,15 @@
 import "package:flutter/material.dart";
 import 'package:examenbotonesrutas/Inicio.dart';
-import 'package:examenbotonesrutas/pagina_timer.dart';
-import 'package:examenbotonesrutas/pagina_positioned.dart';
-import 'package:examenbotonesrutas/pagina_show_search.dart';
-import 'package:examenbotonesrutas/pagina_toggle_button.dart';
-import 'package:examenbotonesrutas/pagina_fractionally_sizedbox.dart';
-import 'package:examenbotonesrutas/pagina_platform_detect.dart';
-import 'package:examenbotonesrutas/pagina_stream_builder.dart';
-import 'package:examenbotonesrutas/pagina_snack_bar.dart';
+import 'package:examenbotonesrutas/Pagina_Card.dart';
+import 'package:examenbotonesrutas/Pagina_Clipper.dart';
+import 'package:examenbotonesrutas/Pagina_RotatedBox.dart';
+import 'package:examenbotonesrutas/Pagina_Transform.dart';
+import 'package:examenbotonesrutas/Pagina_Positioned.dart';
+import 'package:examenbotonesrutas/Pagina_CustomPaint.dart';
+import 'package:examenbotonesrutas/Pagina_ClipOval.dart';
+import 'package:examenbotonesrutas/Pagina_ClipRRect.dart';
+import 'package:examenbotonesrutas/pagina_cliprect.dart';
+import 'package:examenbotonesrutas/pagina_clippath.dart';
 
 void main() => runApp(MiFlutterApp());
 
@@ -22,14 +24,16 @@ class MiFlutterApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const Inicio(),
-        "/Timer": (context) => const MyTimer(),
-        "/Positioned": (context) => const MyPositioned(),
-        "/MyShowSearch": (context) => const MyShowSearch(),
-        "/MyToggleButton": (context) => const MyToggleButton(),
-        "/MyFractionallySizedBox": (context) => const MyFractionallySizedBox(),
-        "/MyPlatformDetect": (context) => const MyPlatformDetect(),
-        "/MyStreamBuilder": (context) => const MyStreamBuilder(),
-        "/MySnackBar": (context) => const MySnackBar(),
+        "/Timer": (context) => const MyCard(),
+        "/Positioned": (context) => const MyCustomClipper(),
+        "/MyShowSearch": (context) => const MyRotatedBox(),
+        "/MyToggleButton": (context) => const MyTransform(),
+        "/MyFractionallySizedBox": (context) => const MyPositioned(),
+        "/MyPlatformDetect": (context) => const MyCustomPaint(),
+        "/MyStreamBuilder": (context) => const MyClipOval(),
+        "/MySnackBar": (context) => const MyClipRRect(),
+        "/MyClipRect": (context) => const MyClipRect(),
+        "/MyClipPath": (context) => const MyClipPath(),
       },
     );
   }

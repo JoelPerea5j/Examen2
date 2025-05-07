@@ -21,84 +21,106 @@ class Inicio extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, "/Timer");
               },
-              child: const Text("ver pantalla Timer"),
+              child: const Text("ver pantalla Card"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/Positioned");
               },
-              child: const Text("ver pantalla Positioned"),
+              child: const Text("ver pantalla Clipper"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MyShowSearch");
               },
-              child: const Text("ver pantalla Show Search"),
+              child: const Text("ver pantalla Rotated Box"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MyToggleButton");
               },
-              child: const Text("ver pantalla Toggle Button"),
+              child: const Text("ver pantalla Transform"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MyFractionallySizedBox");
               },
-              child: const Text("ver pantalla Fractionally SizedBox"),
+              child: const Text("ver pantalla Positioned "),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MyPlatformDetect");
               },
-              child: const Text("ver pantalla Platform Detect"),
+              child: const Text("ver pantalla Custom Paint"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MyStreamBuilder");
               },
-              child: const Text("ver pantalla Stream Builder"),
+              child: const Text("ver pantalla ClipOval"),
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/MySnackBar");
               },
-              child: const Text("ver pantalla MySnackBar"),
+              child: const Text("ver pantalla Clip RRect"),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/MyClipRect");
+              },
+              child: const Text("ver pantalla Clip Rect"),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/MyClipPath");
+              },
+              child: const Text("ver pantalla Clip Path"),
             ),
           ),
         ],
